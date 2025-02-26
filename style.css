@@ -1,0 +1,142 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #e6e6e6;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  padding: 20px 0;
+}
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  transition: 0.1s;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  min-width: 300px;
+  max-width: 400px;
+  min-height: 90vh;
+  padding: 13px;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  margin: 5% 5%;
+}
+.head h2 {
+  margin: 0;
+  font-size: 20px;
+}
+.theme {
+  width: 50px;
+  height: 25px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  background-color: #d3cdcd;
+}
+.theme .bolid {
+  background-color: #f96c5b;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  padding: 8px;
+  margin: 0 3px;
+  animation-duration: 5s;
+  animation-name: bolid;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+  transition: 0.7s;
+}
+@keyframes bolid {
+  0% {
+    background-color: #f96c5b;
+  }
+  100% {
+    background-color: rgb(98, 34, 34);
+  }
+}
+.theme .move {
+  margin-left: 54%;
+  scroll-behavior: smooth;
+  transition: 0.7s;
+}
+.containerBolid {
+  font-size: 10px;
+  letter-spacing: 0.7px;
+  margin-right: -50%;
+  margin-top: 6px;
+}
+@media (max-width: 400px) {
+  .containerBolid {
+    margin-right: -45%;
+  }
+}
+
+/* ============================= */
+.outPut {
+  width: 100%;
+  height: 60px;
+  background-color: #e6e6e6;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  padding:20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #2c2c2c;
+  overflow: hidden;
+}
+/* ========================= */
+.childContainer {
+  background-color: #d3cdcd;
+  padding: 10px;
+  margin-top: 10%;
+  border-radius: 12px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+.parentButton {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 15px;
+  padding: 5px;
+}
+button {
+  background-color: #eae3db;
+  border-radius: 7px;
+  box-shadow: 0px 5px 0px #2c2c2c;
+  transition: all 0.2s ease-in-out;
+  padding: 18px 20px;
+  border: none;
+}
+button:hover {
+  cursor: pointer;
+  background-color: #ebdfdf;
+  box-shadow: 0px 2px 0px #2c2c2c;
+  transform: translateY(3px);
+}
+.both {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.btnReset {
+  background-color: #a2b3e1;
+  width: 90%;
+}
+
+.btnEqual {
+  background-color: #f96c5b;
+  width: 90%;
+}
+.btnDel {
+  background-color: #a2b3e1;
+}
