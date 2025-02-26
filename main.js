@@ -15,6 +15,7 @@ bolid.addEventListener("click", () => {
     outPut.style.backgroundColor = "#181f32";
     boby.style.color = "white";
   } else {
+    outPut.style.backgroundColor = "#e6e6e6";
     boby.style.backgroundColor = "#e6e6e6";
     theme.style.backgroundColor = "#d3cdcd";
     boby.style.color = "black";
