@@ -12,7 +12,7 @@ bolid.addEventListener("click", () => {
     childContaine.style.backgroundColor = "#252d44";
     boby.style.backgroundColor = "#324372";
     theme.style.backgroundColor = "#1f2a48";
-
+    outPut.style.backgroundColor = "#181f32";
     boby.style.color = "white";
   } else {
     boby.style.backgroundColor = "#e6e6e6";
